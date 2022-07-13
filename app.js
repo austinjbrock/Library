@@ -1,44 +1,35 @@
-// //Books will be stored in an array 
- let myLibrary = [2,5,4,6,7];
-// // const bookList = document.getElementById('bookList')
+let formSetup = document.getElementById('form-setup')
+let submitBtn = document.getElementById('submit-btn')
+let formLayout = document.querySelector('.form-layout')
 
-//display Form will be hidden until clicked
-let displayFormBtn = document.getElementById('form-setup')
-let form = document.getElementById('form')
+formSetup.addEventListener('click', ()=>{
+   formLayout.style.display='block';
+   submitBtn.style.display='block';
+})
 
-//add to library Btn
-let addToLib = document.createElement("button");
-addToLib.innerHTML += "Add To Library";
-
-//Brings up the form onclick
-displayFormBtn.addEventListener('click',function() {
-    form.classList.remove('form')
-    document.body.appendChild(addToLib);
-});
-
-//adds book to current libraryArr
-function addBookToLibrary(){
-
-   for (let i = 0; i < myLibrary.length; i++) {
-      console.log(myLibrary[i]);
-
-   }
-// bookList.textContent = myLibrary
-}
-addBookToLibrary()
+submitBtn.addEventListener('click',createBook)
 
 
-function getFormData(){
-   let title = document.getElementById('form-title')
-   let author = document.getElementById('form-author')
-   let pages = document.getElementById('form-pages')
-   let isRead = document.getElementById('form-read')
 
-   console.log(title.value)
-   console.log(author)
-   console.log(pages)
-   console.log(isRead)
+function BookObj (title,author,pages,readStatus){
+   this.title= title;
+   this.author = author;
+   this.pages = pages;
+   this.readStatus =readStatus;
+
 }
 
 
-getFormData()
+let newBook = new BookObj();
+
+function createBook(){
+   newBook.title = bookform.title.value;
+   newBook.author = bookform.author.value;
+   newBook.pages = bookform.pages.value;
+   newBook.readStatus = bookform.readStatus.value;
+
+
+   console.log(newBook)
+
+}
+
