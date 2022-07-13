@@ -8,16 +8,17 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <h1 class="page-header">Library Project</h1>
+   <h1 class="page-header">Library Project</h1>
 
-      <button id="form-setup">Click to Add a Book</button>
-         <form id="form" class="form">
-         <input type="text" placeholder="Title" id="form-title"></input>
-         <input type="text" placeholder="Author" id="form-author"></input>
-         <input type="text" placeholder="Pages" id="form-pages"></input>
-         <input type="text" placeholder="Read Status" id="form-read"></input>
-      </form>
-      <!-- <button id="addToLibraryBtn">Add to Library</button> -->
+   <button id="form-setup">Click to Add a Book</button>
+   
+   <form class="form-layout" name="bookform" style="display: none" id="form-layout">
+      <input type="text" placeholder="Title" name="title" id="form-title">
+      <input type="text" placeholder="Author"name="author" id="form-author">
+      <input type="text" placeholder="Pages" name="pages" id="form-pages">
+      <input type="text" placeholder="Read Status" name="readStatus" id="read-status">
+   </form>
+   <button class=btn id="submit-btn" style="display:none">Add To Lib</button>
 
       <script src="app.js"></script>
 </body>
