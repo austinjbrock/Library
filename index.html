@@ -9,16 +9,17 @@
 </head>
 <body>
    <h1 class="page-header">Library Project</h1>
-   <button id="form-setup">Click to Add a Book</button>
+   <button id="form-setup" class="btn">Click to Add a Book</button>
    <form class="form-layout" name="bookform" style="display: none" id="form-layout">
-      <input type="text" placeholder="Title" name="title" id="form-title">
+      <input type="text reset" placeholder="Title" name="title" id="form-title">
       <input type="text" placeholder="Author"name="author" id="form-author">
       <input type="text" placeholder="Pages" name="pages" id="form-pages">
       <input type="text" placeholder="Read Status" name="readStatus" id="read-status">
    </form>
-   <button class=btn id="submit-btn" style="display:none">Add To Lib</button>
+   <button class=btn id="submit-btn" style="display:none">Add Book</button>
+   <h2 style="display: none;">Current Library</h2>
 
-   <div class="card-container form-layout" style="display: none">
+   <div class="card-container" style="display: none">
       
    </div>
 
