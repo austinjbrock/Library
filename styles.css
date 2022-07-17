@@ -1,20 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
 body{
+   font-family: 'Titillium Web', sans-serif;
    text-align: center;
-   background-color: beige;
+   background-color: #09192f;
+   height: 100vh;
+   color: #FFF;
+}
+
+h1 {
+   font-size: 2.2rem;
+   color: #ccd6f6;
+}
+
+.btn {
+   background-color: #dde3f9;
+   border-radius: 5px;
 }
 
 .form-layout, .btn{
-   display: flex;
    max-width: 80%;
    margin: 0 auto;
+   font-size: 1.15rem;
+   font-family: 'Titillium Web', sans-serif;
+
 }
 
+
+.form-layout{
+   border-radius: 20px;
+}
+
+/* .btn {
+   background-color: #dde3f9;
+   border-radius: 5px;
+} */
+
 input {
+   font-family: 'Titillium Web', sans-serif;
    width: 100%;
    display: flex;
-   padding: 12px 20px;
-   margin: 10px 0;
+   padding: 10px 20px;
+   margin: 15px 0;
    border: 1px solid #ccc;
+   background-color: #dde3f9;
    border-radius: 4px;
    box-sizing: border-box;
+   font-size: 1.25rem;
+}
+
+
+.card-container {
+   margin: 0 auto;
+
+}
+
+.card {
+   color: #09192f;
+   margin: 10px;
+   padding: 10px;
+   background-color: #dde3f9;
+   border: 2px solid black;
+   border-radius: 5px;
+   display: inline-grid;
+   font-size: 1.15rem;
+   
 }
