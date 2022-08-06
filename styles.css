@@ -3,9 +3,9 @@
 body{
    font-family: 'Titillium Web', sans-serif;
    text-align: center;
-   background-color: #09192f;
+   background-color: #0c2240;
    height: 100vh;
-   color: #FFF;
+   color: rgb(195, 194, 194);
 }
 
 h1 {
